@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly To-Do List</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <select id="daySelector">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="week-container">
+            <div id="Monday" class="day-container monday">
+                <h2>Monday</h2>
+                <ul class="taskList"></ul>
+            </div>
+            <div id="Tuesday" class="day-container tuesday">
+                <h2>Tuesday</h2>
+                <ul class="taskList"></ul>
+            </div>
+            <div id="Wednesday" class="day-container wednesday">
+                <h2>Wednesday</h2>
+                <ul class="taskList"></ul>
+            </div>
+            <div id="Thursday" class="day-container thursday">
+                <h2>Thursday</h2>
+                <ul class="taskList"></ul>
+            </div>
+            <div id="Friday" class="day-container friday">
+                <h2>Friday</h2>
+                <ul class="taskList"></ul>
+            </div>
+            <div id="Saturday" class="day-container saturday">
+                <h2>Saturday</h2>
+                <ul class="taskList"></ul>
+            </div>
+            <div id="Sunday" class="day-container sunday">
+                <h2>Sunday</h2>
+                <ul class="taskList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
